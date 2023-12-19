@@ -5,7 +5,6 @@ import { CartContext } from "../../contexts/cart.context";
 import {
   ProductCardContainer,
   ProductImg,
-  ProductButton,
   ProductFooter,
   ProductName,
   ProductPrice,
@@ -26,12 +25,12 @@ const ProductCard = ({ product }) => {
         <ProductName>{name}</ProductName>
         <ProductPrice>{price}</ProductPrice>
       </ProductFooter>
-      <ProductButton
+      <Button
         buttonType={BUTTON_TYPE_CLASSES.inverted}
         onClick={addProductToCart}
       >
         Add to cart
-      </ProductButton>
+      </Button>
     </ProductCardContainer>
   );
 };
