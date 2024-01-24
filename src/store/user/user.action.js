@@ -31,3 +31,12 @@ export const signUpSuccess = (user, additionalDetails) =>
 
 export const signUpFail = (error) =>
   createAction(USER_ACTION_TYPES.SIGN_UP_FAIL, error);
+
+export const signOutStart = () =>
+  createAction(USER_ACTION_TYPES.SIGN_OUT_START);
+
+export const signOutSuccess = () =>
+  createAction(USER_ACTION_TYPES.SIGN_OUT_SUCCESS);
+
+export const signOutFail = (error) =>
+  createAction(USER_ACTION_TYPES.SIGN_OUT_FAIL, error);
