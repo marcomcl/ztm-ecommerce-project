@@ -18,3 +18,16 @@ export const signInSuccess = (user) =>
 
 export const signInFail = (error) =>
   createAction(USER_ACTION_TYPES.SIGN_IN_FAIL, error);
+
+export const signUpStart = (email, password, displayName) =>
+  createAction(USER_ACTION_TYPES.SIGN_UP_START, {
+    email,
+    password,
+    displayName,
+  });
+
+export const signUpSuccess = (user, additionalDetails) =>
+  createAction(USER_ACTION_TYPES.SIGN_UP_SUCCESS, { user, additionalDetails });
+
+export const signUpFail = (error) =>
+  createAction(USER_ACTION_TYPES.SIGN_UP_FAIL, error);
