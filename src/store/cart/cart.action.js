@@ -1,5 +1,5 @@
 import { CART_ACTION_TYPES } from "./cart.types";
-import { createAction } from "../../reducer/reducer.utils";
+import { createAction } from "../../utils/reducer/reducer.utils";
 
 const addCartItem = (cartItems, productToAdd) => {
   const existingCartItem = cartItems.find(
