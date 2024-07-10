@@ -13,7 +13,7 @@ export function withMatcher(actionCreator: Function) {
     return Object.assign(actionCreator, {
         type,
         match(action: AnyAction) {
-            action.type === type;
+            return action.type === type;
         }
     })
 }
