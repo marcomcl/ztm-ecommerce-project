@@ -12,8 +12,14 @@ import {
 } from "./product-card.styles";
 
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
+import { CategoryItem } from "../../store/categories/category.types";
+import { FC } from "react";
 
-const ProductCard = ({ product }) => {
+type ProductCardProps = {
+  product: CategoryItem;
+}
+
+const ProductCard: FC<ProductCardProps> = ({ product }) => {
   const dispatch = useDispatch();
 
   const cartItems = useSelector(selectCartItems);

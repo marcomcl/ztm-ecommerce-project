@@ -16,8 +16,14 @@ import {
   Arrow,
   Value,
 } from "./checkout-item.styles";
+import { CartItem } from "../../store/cart/cart.types";
+import { FC } from "react";
 
-const CheckoutItem = ({ cartItem }) => {
+type CheckoutItemProps = {
+  cartItem: CartItem;
+}
+
+const CheckoutItem: FC<CheckoutItemProps> = ({ cartItem }) => {
   const dispatch = useDispatch();
 
   const cartItems = useSelector(selectCartItems);
