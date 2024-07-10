@@ -8,7 +8,7 @@ import {
   signOutFail,
   signOutSuccess,
 } from "./user.action";
-import USER_ACTION_TYPES from "./user.types";
+import { USER_ACTION_TYPES } from "./user.types";
 import {
   getCurrentUser,
   createUserDocumentFromAuth,
